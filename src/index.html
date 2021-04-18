@@ -4,42 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Webpack Starter Kit</title>
-
-    <!-- Don't forget to delete this style tag. -->
     <style>
-      body {
-        min-height: 100vh;
-        margin: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-
-      .intro {
-        text-align: center;
-      }
-
-      .intro h1 {
-        margin-top: 0;
-        font-weight: 500;
-        font-size: 40px;
-      }
-
-      .intro img {
-        display: block;
-        max-width: 100%;
-        height: auto;
-      }
+      @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&display=swap');
     </style>
+    <title>countries</title>
   </head>
 
   <body>
-    <article class="intro">
-      <h1>Webpack starter kit</h1>
-
-      <!-- HTML image reference example. -->
-      <img src="./images/intro.png" alt="" width="640" />
-    </article>
+    <div class="wrapper">
+      <h1 class="page-title">What country are you looking for ?</h1>
+      <form>
+        <input type="text" class="textbox" placeholder="Search" />
+        <input value="🗺" type="button" class="button" />
+      </form>
+    </div>
+    <div class="countries"></div>
   </body>
 </html>
