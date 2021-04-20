@@ -13,9 +13,6 @@ const refs = {
 refs.input.addEventListener(
   'input',
   debounce(e => onSearch(e.target.value), 500),
-  // debounce(e => {
-  //   return onSearch(e.target.value);
-  // }, 500),
 );
 
 function onSearch(name) {
